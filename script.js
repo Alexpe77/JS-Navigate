@@ -3,9 +3,5 @@ Move the <h2> of the third section in the second one and vice-versa
 Delete the last section from the DOM, we don't need it anyways
 */
 
-const list = document.querySelector('ol');
-const lastElement = list.lastElementChild;
-
-list.insertBefore(lastElement, list.firstElementChild);
-
-console.log(list);
+const section3 = document.querySelector('section:nth-of-type(3)');
+section3.remove();
